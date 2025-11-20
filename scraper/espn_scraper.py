@@ -4,8 +4,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from scraper.espn.fixtures import fetch_next_matches
-from scraper.espn.results import fetch_last_results
+from .espn.fixtures import fetch_next_matches
+from .espn.results import fetch_last_results
 
 
 DATA_PATH = Path("data") / "matches.json"
