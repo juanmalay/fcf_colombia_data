@@ -1,0 +1,23 @@
+{
+  "nextMatches": [
+    {
+      "homeTeam": "Colombia",
+      "homeCode": "COL",
+      "awayTeam": "Argentina",
+      "awayCode": "ARG",
+      "date": "2025-02-15",
+      "time": "19:00",
+      "tournament": "Amistoso Internacional"
+    }
+  ],
+  "results": [
+    {
+      "homeTeam": "Colombia",
+      "awayTeam": "Perú",
+      "homeScore": 3,
+      "awayScore": 1,
+      "tournament": "Amistoso Internacional",
+      "date": "2025-01-10"
+    }
+  ]
+}
