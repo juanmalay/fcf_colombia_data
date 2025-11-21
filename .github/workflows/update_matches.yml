@@ -2,8 +2,11 @@ name: Update Matches Data
 
 on:
   schedule:
-    - cron: "0 * * * *"   # Cada 1 hora
-  workflow_dispatch:      # Permite correrlo manualmente
+    - cron: "0 * * * *" # Cada 1 hora
+  workflow_dispatch: # Permite correrlo manualmente
+
+permissions:
+  contents: write
 
 jobs:
   update:
