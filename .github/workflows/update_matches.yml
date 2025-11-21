@@ -24,7 +24,7 @@ jobs:
 
       - name: Run ESPN scraper
         run: |
-          python scraper/espn/espn_scraper.py
+          python scraper/espn_scraper.py
 
       - name: Commit and push changes
         run: |
