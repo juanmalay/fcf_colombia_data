@@ -2,8 +2,8 @@ name: Update Matches Data
 
 on:
   schedule:
-    - cron: "0 * * * *"
-  workflow_dispatch:
+    - cron: "0 * * * *"   # Cada 1 hora
+  workflow_dispatch:      # Permite correrlo manualmente
 
 jobs:
   update:
@@ -24,7 +24,7 @@ jobs:
 
       - name: Run ESPN scraper
         run: |
-          python -m scraper.espn.espn_scraper
+          python scraper/espn/espn_scraper.py
 
       - name: Commit and push changes
         run: |
@@ -33,5 +33,6 @@ jobs:
 
           git add data/matches.json
 
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update matches data"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update ESPN matches data"
+
           git push
