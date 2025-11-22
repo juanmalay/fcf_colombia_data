@@ -4,6 +4,16 @@
     {
       "homeTeam": "Colombia",
       "homeTeamCode": "co",
+      "awayTeam": "Australia",
+      "awayTeamCode": "xx",
+      "date": "2025-11-18T00:00:00Z",
+      "homeScore": 3,
+      "awayScore": 0,
+      "matchType": "Amistoso"
+    },
+    {
+      "homeTeam": "Colombia",
+      "homeTeamCode": "co",
       "awayTeam": "New Zealand",
       "awayTeamCode": "nz",
       "date": "2025-11-15T00:00:00Z",
@@ -88,16 +98,6 @@
       "awayTeamCode": "co",
       "date": "2025-03-20T00:00:00Z",
       "homeScore": 2,
-      "awayScore": 1,
-      "matchType": "Eliminatorias"
-    },
-    {
-      "homeTeam": "Colombia",
-      "homeTeamCode": "co",
-      "awayTeam": "Ecuador",
-      "awayTeamCode": "ec",
-      "date": "2025-11-19T00:00:00Z",
-      "homeScore": 0,
       "awayScore": 1,
       "matchType": "Eliminatorias"
     }
