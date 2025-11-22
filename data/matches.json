@@ -4,11 +4,22 @@
     {
       "homeTeam": "Colombia",
       "homeTeamCode": "co",
+      "awayTeam": "Australia",
+      "awayTeamCode": "xx",
+      "date": "2025-11-18T00:00:00Z",
+      "homeScore": 3,
+      "awayScore": 0,
+      "matchType": "Amistoso"
+    },
+    {
+      "homeTeam": "Colombia",
+      "homeTeamCode": "co",
       "awayTeam": "New Zealand",
       "awayTeamCode": "nz",
       "date": "2025-11-15T00:00:00Z",
       "homeScore": 2,
-      "awayScore": 1
+      "awayScore": 1,
+      "matchType": "Amistoso"
     },
     {
       "homeTeam": "Colombia",
@@ -17,7 +28,8 @@
       "awayTeamCode": "ca",
       "date": "2025-10-14T00:00:00Z",
       "homeScore": 0,
-      "awayScore": 0
+      "awayScore": 0,
+      "matchType": "Amistoso"
     },
     {
       "homeTeam": "Mexico",
@@ -26,7 +38,8 @@
       "awayTeamCode": "co",
       "date": "2025-10-11T00:00:00Z",
       "homeScore": 0,
-      "awayScore": 4
+      "awayScore": 4,
+      "matchType": "Amistoso"
     },
     {
       "homeTeam": "Venezuela",
@@ -35,7 +48,8 @@
       "awayTeamCode": "co",
       "date": "2025-09-09T00:00:00Z",
       "homeScore": 3,
-      "awayScore": 6
+      "awayScore": 6,
+      "matchType": "Eliminatorias"
     },
     {
       "homeTeam": "Colombia",
@@ -44,7 +58,8 @@
       "awayTeamCode": "bo",
       "date": "2025-09-04T00:00:00Z",
       "homeScore": 3,
-      "awayScore": 0
+      "awayScore": 0,
+      "matchType": "Eliminatorias"
     },
     {
       "homeTeam": "Argentina",
@@ -53,7 +68,8 @@
       "awayTeamCode": "co",
       "date": "2025-06-10T00:00:00Z",
       "homeScore": 1,
-      "awayScore": 1
+      "awayScore": 1,
+      "matchType": "Eliminatorias"
     },
     {
       "homeTeam": "Colombia",
@@ -62,7 +78,8 @@
       "awayTeamCode": "pe",
       "date": "2025-06-06T00:00:00Z",
       "homeScore": 0,
-      "awayScore": 0
+      "awayScore": 0,
+      "matchType": "Eliminatorias"
     },
     {
       "homeTeam": "Colombia",
@@ -71,7 +88,8 @@
       "awayTeamCode": "py",
       "date": "2025-03-25T00:00:00Z",
       "homeScore": 2,
-      "awayScore": 2
+      "awayScore": 2,
+      "matchType": "Eliminatorias"
     },
     {
       "homeTeam": "Brazil",
@@ -80,16 +98,8 @@
       "awayTeamCode": "co",
       "date": "2025-03-20T00:00:00Z",
       "homeScore": 2,
-      "awayScore": 1
-    },
-    {
-      "homeTeam": "Colombia",
-      "homeTeamCode": "co",
-      "awayTeam": "Ecuador",
-      "awayTeamCode": "ec",
-      "date": "2025-11-19T00:00:00Z",
-      "homeScore": 0,
-      "awayScore": 1
+      "awayScore": 1,
+      "matchType": "Eliminatorias"
     }
   ]
 }
