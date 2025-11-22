@@ -43,14 +43,29 @@ def team_code(name: str) -> str:
     name = name.strip()
     return TEAM_CODE_MAP.get(name, "xx")
 
+def map_competition(raw: str) -> str:
+    r = raw.lower()
+
+    if "friendly" in r:
+        return "Amistoso"
+    if "qualifying" in r or "conmebol" in r:
+        return "Eliminatorias"
+    if "copa américa" in r or "copa america" in r:
+        return "Copa América"
+    if "world cup" in r:
+        return "Mundial"
+
+    return "Internacional"
+
 
 @dataclass
 class Match:
     home_team: str
     away_team: str
-    date_iso: str  # ISO 8601
+    date_iso: str
     home_score: Optional[int] = None
     away_score: Optional[int] = None
+    match_type: Optional[str] = None   # 👈 NUEVO
 
     @property
     def home_code(self) -> str:
@@ -61,7 +76,6 @@ class Match:
         return team_code(self.away_team)
 
     def to_dict(self) -> Dict:
-        """Formato que espera tu Flutter."""
         data = {
             "homeTeam": self.home_team,
             "homeTeamCode": self.home_code,
@@ -72,7 +86,10 @@ class Match:
         if self.home_score is not None and self.away_score is not None:
             data["homeScore"] = self.home_score
             data["awayScore"] = self.away_score
+        if self.match_type:
+            data["matchType"] = self.match_type  # 👈 EXPORTAR TIPO
         return data
+
 
 
 # -------- parsers ----------
@@ -101,7 +118,6 @@ def _parse_espn_date(date_str: str, time_str: str | None = None) -> str:
 
 
 def parse_results_html(html: str, limit: int = 10) -> List[Match]:
-    """Parsea la página de resultados de ESPN y devuelve los últimos partidos."""
     soup = BeautifulSoup(html, "html.parser")
 
     rows = soup.select("table.Table tbody tr")
@@ -112,17 +128,14 @@ def parse_results_html(html: str, limit: int = 10) -> List[Match]:
         if len(cols) < 4:
             continue
 
-        # Normalmente:
-        # 0: date          -> "Sat, Nov 15"
-        # 1: home team     -> "Colombia"
-        # 2: result        -> "2 - 1"
-        # 3: away team     -> "New Zealand"
-        # 4: estado (FT)
-        # 5: competición
         date_txt = cols[0]
         home_team = cols[1]
         result_txt = cols[2]
         away_team = cols[3]
+
+        # 👇 NUEVO: COMPETICIÓN
+        competition_raw = cols[5] if len(cols) >= 6 else ""
+        competition = map_competition(competition_raw)
 
         m = re.search(r"(\d+)\s*-\s*(\d+)", result_txt)
         if not m:
@@ -140,6 +153,7 @@ def parse_results_html(html: str, limit: int = 10) -> List[Match]:
                 date_iso=date_iso,
                 home_score=home_score,
                 away_score=away_score,
+                match_type=competition,   # 👈 AQUI
             )
         )
 
