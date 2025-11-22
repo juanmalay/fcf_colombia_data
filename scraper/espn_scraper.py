@@ -6,10 +6,10 @@ from pathlib import Path
 
 from espn.fixtures import fetch_next_matches
 from espn.results import fetch_last_results
-
+from espn.parser import fetch_match_details
 
 DATA_PATH = Path("data") / "matches.json"
-
+DETAILS_DIR = Path("data") / "match_details"  
 
 def run():
     next_matches = fetch_next_matches(limit=5)
