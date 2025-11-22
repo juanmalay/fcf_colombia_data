@@ -1,4 +1,95 @@
 {
   "nextMatches": [],
-  "results": []
+  "results": [
+    {
+      "homeTeam": "Colombia",
+      "homeTeamCode": "co",
+      "awayTeam": "New Zealand",
+      "awayTeamCode": "nz",
+      "date": "2025-11-15T00:00:00Z",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "homeTeam": "Colombia",
+      "homeTeamCode": "co",
+      "awayTeam": "Canada",
+      "awayTeamCode": "ca",
+      "date": "2025-10-14T00:00:00Z",
+      "homeScore": 0,
+      "awayScore": 0
+    },
+    {
+      "homeTeam": "Mexico",
+      "homeTeamCode": "mx",
+      "awayTeam": "Colombia",
+      "awayTeamCode": "co",
+      "date": "2025-10-11T00:00:00Z",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "homeTeam": "Venezuela",
+      "homeTeamCode": "ve",
+      "awayTeam": "Colombia",
+      "awayTeamCode": "co",
+      "date": "2025-09-09T00:00:00Z",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "homeTeam": "Colombia",
+      "homeTeamCode": "co",
+      "awayTeam": "Bolivia",
+      "awayTeamCode": "bo",
+      "date": "2025-09-04T00:00:00Z",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "homeTeam": "Argentina",
+      "homeTeamCode": "ar",
+      "awayTeam": "Colombia",
+      "awayTeamCode": "co",
+      "date": "2025-06-10T00:00:00Z",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "homeTeam": "Colombia",
+      "homeTeamCode": "co",
+      "awayTeam": "Peru",
+      "awayTeamCode": "pe",
+      "date": "2025-06-06T00:00:00Z",
+      "homeScore": 0,
+      "awayScore": 0
+    },
+    {
+      "homeTeam": "Colombia",
+      "homeTeamCode": "co",
+      "awayTeam": "Paraguay",
+      "awayTeamCode": "py",
+      "date": "2025-03-25T00:00:00Z",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "homeTeam": "Brazil",
+      "homeTeamCode": "br",
+      "awayTeam": "Colombia",
+      "awayTeamCode": "co",
+      "date": "2025-03-20T00:00:00Z",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "homeTeam": "Colombia",
+      "homeTeamCode": "co",
+      "awayTeam": "Ecuador",
+      "awayTeamCode": "ec",
+      "date": "2025-11-19T00:00:00Z",
+      "homeScore": 0,
+      "awayScore": 1
+    }
+  ]
 }
